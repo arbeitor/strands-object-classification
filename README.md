@@ -80,7 +80,7 @@ Start some terminals and run the commands below:
    
         $ roscore
 
-2. Start the recognition service:
+2. Start the recognition service (The duration of the training phase depends on how many models you use):
 
         $ rosrun shape_simple_classifier shape_simple_classifier_node -models_dir /path/to/models/data/ -training_dir /path/to/models/trained/ -nn 10
 
