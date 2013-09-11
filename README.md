@@ -57,7 +57,10 @@ Installation of this package
    
    `PCL_APP_3D_REC_FRAMEWORK_INCLUDE_DIR` to `/path/to/pcl/pcl/apps/3d_rec_framework/include` and 
    
-   `PCL_APP_3D_REC_FRAMEWORK_LIBRARY` to `/path/to/pcl/build/lib/FOO`
+   `PCL_APP_3D_REC_FRAMEWORK_LIBRARY` to `/path/to/pcl/build/lib/libpcl_3d_rec_framework.so`
+   
+   Finally, configure (press `c`), and generate and exit (press `g`).
+   
    
 4. Compile again:
 
@@ -83,6 +86,8 @@ Start some terminals and run the commands below:
 2. Start the recognition service (The duration of the training phase depends on how many models you use):
 
         $ rosrun shape_simple_classifier shape_simple_classifier_node -models_dir /path/to/models/data/ -training_dir /path/to/models/trained/ -nn 10
+
+   Use `-chop_z` to cut off all information beyond a given distance. FOr example: `-chop_z 2`
 
 3. Plug-in the kinect and start openni:
 
