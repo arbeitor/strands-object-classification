@@ -48,7 +48,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp sensor_msgs soc_msg_and_serv)
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-   INCLUDE_DIRS include
+#   INCLUDE_DIRS include
 #  LIBRARIES soc_test
 #  CATKIN_DEPENDS roscpp sensor_msgs soc_msg_and_serv
 #  DEPENDS system_lib
